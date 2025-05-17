@@ -1,0 +1,7 @@
+matplotlib==3.8.3
+numpy==1.24.1
+pandas==2.2.2
+scikit_learn==1.4.1.post1
+Shapely==2.0.4
+torch==2.2.1+cu118
+torch_geometric==2.5.3

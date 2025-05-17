@@ -1,0 +1,35 @@
+{
+    "project_name": "Poly2Vec",
+    "dataset_name": "NewYork",
+    "dataset": "", // Dataset name
+    "dataset_type1": "",   // Type of the first dataset ("polygons", "pollines", "points")
+    "dataset_type2": "",   // Type of the second dataset ("polygons", "pollines", "points")
+    "task": "", // Task name
+    "num_classes": "", // Number of classes
+    "data_path": "", // Path to the dataset
+    "data_file": "", // Name of the data file
+    "save_dir": "./results/",
+    "training": true,
+
+    "encoder_type": "poly2vec",
+
+    "batch_size": 128,
+    "lr": 1e-4,
+    "wd": 1e-8,
+    "dropout": 0.2,
+    "d_input": 210,
+    "d_hid": 100,
+    "d_out": 32,
+
+    "gfm_params": {
+        "w_min": 0.1,
+        "w_max": 1.0,
+        "n_freqs": 10
+    },
+
+    "device": "cuda",
+
+    "epochs": 20,
+
+    "patience": 10
+}

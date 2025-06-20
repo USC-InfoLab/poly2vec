@@ -82,10 +82,12 @@ python run.py \
 If you found `Poly2Vec` useful, please consider citing us:
 
 ```bibtex
-@article{siampou2024poly2vec,
-  title={Poly2vec: Polymorphic encoding of geospatial objects for spatial reasoning with deep neural networks},
-  author={Siampou, Maria Despoina and Li, Jialiang and Krumm, John and Shahabi, Cyrus and Lu, Hua},
-  journal={arXiv preprint arXiv:2408.14806},
-  year={2024}
+@inproceedings{
+  siampou2025polyvec,
+  title={Poly2Vec: Polymorphic Fourier-Based Encoding of Geospatial Objects for Geo{AI} Applications},
+  author={Maria Despoina Siampou and Jialiang Li and John Krumm and Cyrus Shahabi and Hua Lu},
+  booktitle={Forty-second International Conference on Machine Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=kWyov6XrXs}
 }
 ```

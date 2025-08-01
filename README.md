@@ -85,6 +85,7 @@ If you found `Poly2Vec` useful, please consider citing us:
 @inproceedings{siampoupoly2vec,
   title={Poly2Vec: Polymorphic Fourier-Based Encoding of Geospatial Objects for GeoAI Applications},
   author={Siampou, Maria Despoina and Li, Jialiang and Krumm, John and Shahabi, Cyrus and Lu, Hua},
-  booktitle={Forty-second International Conference on Machine Learning}
+  booktitle={Forty-second International Conference on Machine Learning},
+  year={2025}
 }
 ```

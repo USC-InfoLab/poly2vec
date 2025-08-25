@@ -60,6 +60,12 @@ python utils/data_generation.py
 
 You will get files like `polygon_polygon_topological_relationship_data.pt` in each dataset's folder.
 
+### Link to Datasets
+For completeness, we also provide a link to the preprocessed data used for all the experiments (including RegionDCL) 
+```
+https://drive.google.com/drive/folders/119KvtA1K9CbII6TMMSPXkd1Yjrxhv9-P?usp=sharing
+```
+
 ## 🚀 Training
 Specify your training setup in the `config.json` file.
 

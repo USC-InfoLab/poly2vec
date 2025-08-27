@@ -25,14 +25,27 @@ Then install the dependencies:
 pip install -r requirements.txt
 ```
 
-## 📦 Preprocessed Data
+## Datasets
 
-We utilized two OpenStreetMap (OSM) datasets in our evaluation: **Singapore** and **New York**. The required data can be downloaded from [Geofabrik](https://download.geofabrik.de/).
+We provide a link to the preprocessed data used for all the experiments (including RegionDCL) 
+```
+https://drive.google.com/drive/folders/119KvtA1K9CbII6TMMSPXkd1Yjrxhv9-P?usp=sharing
+```
+
+## 📦 Data Preprocessing
+We also describe the preprocessing steps followed to obtain the data:
+
+We utilized two OpenStreetMap (OSM) datasets in our evaluation: **Singapore** and **New York**. The required data can be either downloaded from [Geofabrik](https://download.geofabrik.de/), or programmatically using OSMnx.
 
 ### OSM Tags Used
 - **Points (POIs)**: `amenity`, `shop`, `tourism`, `leisure`
 - **Polylines (Roads)**: `motorway`, `trunk`, `primary`
 - **Polygons (Buildings)**: `building`
+
+### Example OSMNx query
+```
+pois_sg = ox.geometries_from_place("Singapore", tags={"amenity": True, "shop": True, "tourism": True, "leisure": True})
+```
 
 ### Preprocessing Steps
 
@@ -44,7 +57,7 @@ We utilized two OpenStreetMap (OSM) datasets in our evaluation: **Singapore** an
 python utils/data_preprocessing.py
 ```
 
-his will generate the following files inside each dataset folder:
+This will generate the following files inside each dataset folder:
 
 - `poi_normalized.pkl`
 - `roads_normalized.pkl`
@@ -59,12 +72,6 @@ python utils/data_generation.py
 ```
 
 You will get files like `polygon_polygon_topological_relationship_data.pt` in each dataset's folder.
-
-### Link to Datasets
-For completeness, we also provide a link to the preprocessed data used for all the experiments (including RegionDCL) 
-```
-https://drive.google.com/drive/folders/119KvtA1K9CbII6TMMSPXkd1Yjrxhv9-P?usp=sharing
-```
 
 ## 🚀 Training
 Specify your training setup in the `config.json` file.
